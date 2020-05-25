@@ -86,8 +86,8 @@ scores = model.evaluate(x_test, y_test, verbose=1)
 print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
 
-text = scores.history
-accuracy = text['accuracy'][1] * 100
+text = history.history
+accuracy = text['scores'][1] * 100
 accuracy = int(accuracy)
 f=open("accuracy.txt","w+")
 f.write(str(accuracy))
