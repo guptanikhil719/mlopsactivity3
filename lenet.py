@@ -87,8 +87,7 @@ print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
 
 text = history.history
-accuracy = text['accuracy'][1] * 100
-accuracy = int(accuracy)
+accuracy = int(['accuracy'][1]* 100)
 f=open("accuracy.txt","w+")
 f.write(str(accuracy))
 f.close()
