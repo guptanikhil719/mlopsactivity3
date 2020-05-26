@@ -69,9 +69,14 @@ model.compile(loss = 'categorical_crossentropy',
     
 print(model.summary())
 
+input_file = open('/root/mlopsactivity3/input.txt','r')
+inputs = input_file.read()
+inputs = inputs.split('\n')
+epoch = int(inputs[0])
+
 # Training Parameters
 batch_size = 128
-epochs = int(inputs[1])
+epochs = int(inputs[0])
 
 history = model.fit(x_train, y_train,
           batch_size=batch_size,
