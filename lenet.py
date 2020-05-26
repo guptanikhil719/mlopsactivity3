@@ -93,7 +93,7 @@ accuracy_file.close()
 display_matter = open('/mlopsactivity3.1/display_matter.html','r+')
 display_matter.read()
 display_matter.write('<pre>\n---------------------------------------------\n')
-display_matter.write(model.summary())
+#display_matter.write(model.summary())
 display_matter.write('\nAccuracy achieved : ' + str(scores[1])+'\n</pre>')
 display_matter.close()
 
