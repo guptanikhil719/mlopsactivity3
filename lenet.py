@@ -91,6 +91,11 @@ scores = model.evaluate(x_test, y_test, verbose=1)
 print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
 
+data_file = open('/mlopsactivity3.1/data.txt','w')
+data_file.write(str(epochs))
+data_file.close()
+
+
 accuracy_file = open('/mlopsactivity3.1/accuracy.txt','w')
 accuracy_file.write(str(scores[1]))
 accuracy_file.close()
