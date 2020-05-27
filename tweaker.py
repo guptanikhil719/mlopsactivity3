@@ -41,25 +41,25 @@ input_file.close()
 #display_matter.write('\nEpochs :'+ str(epochs))
 #display_matter.close()
 
-display_matter = open('/mlopsactivity3.1/display_matter.html','r+')
-display_matter.read()
-display_matter.write('<pre>\n---------------------------------------------\n')
-#display_matter.write(model.summary())
+#display_matter = open('/mlopsactivity3.1/display_matter.html','r+')
+#display_matter.read()
+#display_matter.write('<pre>\n---------------------------------------------\n')
+##display_matter.write(model.summary())
 
-display_matter.write('\nLayer -1')
-display_matter.write('\nNumber Of Filters : 20')
-display_matter.write('\nFilter Size : 5')
-display_matter.write('\nPool Size : 2')
+#display_matter.write('\nLayer -1')
+#display_matter.write('\nNumber Of Filters : 20')
+#display_matter.write('\nFilter Size : 5')
+#display_matter.write('\nPool Size : 2')
 
-display_matter.write('\nLayer -2')
-display_matter.write('\nNumber Of Filters : 50')
-display_matter.write('\nFilter Size : 5')
-display_matter.write('\nPool Size : 2')
-display_matter.write('\nEpochs :'+ str(epochs))
+#display_matter.write('\nLayer -2')
+#display_matter.write('\nNumber Of Filters : 50')
+#display_matter.write('\nFilter Size : 5')
+#display_matter.write('\nPool Size : 2')
+#display_matter.write('\nEpochs :'+ str(epochs))
 
 
-display_matter.write('\nAccuracy achieved : ' + str(scores[1])+'\n</pre>')
-display_matter.close()
+#display_matter.write('\nAccuracy achieved : ' + str(scores[1])+'\n</pre>')
+#display_matter.close()
 
 
 
