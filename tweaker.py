@@ -24,6 +24,6 @@ input_file.close()
 
 #input_file = open('/root/mlopsactivity3/input.txt','w')
 #input_file.close()
-input_file = open('/mlopsactivity3.1/input.txt','w')
+input_file = open('/root/mlopsactivity3/input.txt','w')
 input_file.write(str(epochs))
 input_file.close()
