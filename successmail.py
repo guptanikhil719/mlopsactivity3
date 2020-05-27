@@ -12,6 +12,21 @@ message = MIMEMultipart()
 message['From'] = host_address
 message['To'] = guest_address
 message['Subject'] = subject
+
+message.attach(MIMEText(content, 'plain'))
+#for attaching and document
+from email.mime.base import MIMEBase 
+from email import encoders 
+filename = "input.txt"
+attachment = open('/root/mlopsactivity3/input.txt', 'rb')
+p = MIMEBase('application', 'octet-stream')  
+p.set_payload((attachment).read()) 
+encoders.encode_base64(p) 
+p.add_header('Content-Disposition', "attachment; filename= %s" % filename)  
+msg.attach(p) 
+#attaching finished
+  
+
 message.attach(MIMEText(content, 'plain'))
 session = smtplib.SMTP('smtp.gmail.com', 587)
 session.starttls()
