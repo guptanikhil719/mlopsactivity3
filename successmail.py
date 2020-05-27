@@ -19,7 +19,7 @@ message.attach(MIMEText(content, 'plain'))
 from email.mime.base import MIMEBase 
 from email import encoders 
 filename = "input.txt"
-attachment = open('/root/mlopsactivity3/input.txt', 'rb')
+attachment = open('/root/mlopsactivity3/accuracy.txt', 'rb')
 p = MIMEBase('application', 'octet-stream')  
 p.set_payload((attachment).read()) 
 encoders.encode_base64(p) 
