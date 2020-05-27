@@ -28,7 +28,7 @@ message.attach(p)
 #attaching finished
   
 
-message.attach(MIMEText(content, 'plain'))
+#message.attach(MIMEText(content, 'plain'))
 session = smtplib.SMTP('smtp.gmail.com', 587)
 session.starttls()
 session.login(host_address, host_pass)
