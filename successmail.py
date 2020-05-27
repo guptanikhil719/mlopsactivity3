@@ -6,7 +6,8 @@ host_pass = "Nikhil@94588"
 guest_address = "guptanikhil719@gmail.com"
 subject = "Regarding Success of your model "
 content = '''Hello, 
-				Dear Developer your model has achieved the desired accuracy.
+	Dear Developer your model has achieved the desired accuracy.
+        And the attachment file has been send to you along with this mail.
 			THANK YOU ...'''
 message = MIMEMultipart()
 message['From'] = host_address
@@ -23,7 +24,7 @@ p = MIMEBase('application', 'octet-stream')
 p.set_payload((attachment).read()) 
 encoders.encode_base64(p) 
 p.add_header('Content-Disposition', "attachment; filename= %s" % filename)  
-msg.attach(p) 
+message.attach(p) 
 #attaching finished
   
 
