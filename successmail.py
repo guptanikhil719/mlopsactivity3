@@ -2,8 +2,8 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 host_address = "your email address"
-host_pass = "your email password"
-guest_address = "guest password"
+host_pass = " *+*+*+*+*+ "
+guest_address = "guest email address"
 subject = "Regarding Success of your model "
 content = '''Hello, 
 	Dear Developer your model has achieved the desired accuracy.
